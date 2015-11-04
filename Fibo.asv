@@ -1,0 +1,12 @@
+function [L] = LU(M)
+
+n=size(M);
+L=zeros(n,n);
+for i=0:n
+    for j=0:n
+        if i==j
+            M(i,i)=M(i,i)*(1/M(i,i));
+        else
+            
+            
+
